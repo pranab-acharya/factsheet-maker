@@ -1,0 +1,41 @@
+2025/06/20 14:01:14 main.go:73: Logging initialized. Log file: logs/ats-processor-2025-06-20.log
+2025/06/20 14:01:14 main.go:40: Server started at :8081
+2025/06/20 14:02:09 main.go:109: Starting job e49d5060-eb2b-4edb-932c-456d1c3337ec for tenant: Manpower Resources India Pvt Ltd, company: Viraj Steels with 2 candidates
+2025/06/20 14:02:09 main.go:138: Processing candidate: Priya Sharma (priya.sharma@example.com)
+2025/06/20 14:02:09 main.go:138: Processing candidate: Aarav Mehta (aarav.mehta@example.com)
+2025/06/20 14:02:09 main.go:356: Downloading file from URL: https://msnlabs.com/img/resume-sample.pdf
+2025/06/20 14:02:09 main.go:356: Downloading file from URL: https://calibre-ebook.com/downloads/demos/demo.doc
+2025/06/20 14:02:10 main.go:144: Error processing candidate aarav.mehta@example.com: failed to download resume: failed to download file: HTTP 404
+2025/06/20 14:02:11 main.go:375: File downloaded successfully: /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/temp/priya.sharma_example.com/resume
+2025/06/20 14:02:11 main.go:397: Merging PDFs: /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/factsheets/priya.sharma_example.com_factsheet.pdf + /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/temp/priya.sharma_example.com/resume.pdf -> /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/temp/priya.sharma_example.com/merged.pdf
+2025/06/20 14:02:11 main.go:406: PDFs merged successfully: /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/temp/priya.sharma_example.com/merged.pdf
+2025/06/20 14:02:11 main.go:149: Successfully processed candidate: priya.sharma@example.com
+2025/06/20 14:02:11 main.go:156: Processing completed. Success: 1, Errors: 1
+2025/06/20 14:02:11 main.go:411: Creating zip file from directory: /tmp/candidate-processor/e49d5060-eb2b-4edb-932c-456d1c3337ec/factsheets -> /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_e49d5060-eb2b-4edb-932c-456d1c3337ec.zip
+2025/06/20 14:02:11 main.go:449: Zip file created with 2 files: /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_e49d5060-eb2b-4edb-932c-456d1c3337ec.zip
+2025/06/20 14:02:11 main.go:171: Created zip file: /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_e49d5060-eb2b-4edb-932c-456d1c3337ec.zip
+2025/06/20 14:02:11 main.go:186: Job e49d5060-eb2b-4edb-932c-456d1c3337ec completed with errors for Manpower Resources India Pvt Ltd - Viraj Steels: [aarav.mehta@example.com: failed to download resume: failed to download file: HTTP 404]
+2025/06/20 14:02:11 main.go:121: Cleaning up temporary files for job e49d5060-eb2b-4edb-932c-456d1c3337ec
+2025/06/20 14:02:11 main.go:125: Successfully cleaned up temporary files for job e49d5060-eb2b-4edb-932c-456d1c3337ec
+2025/06/20 14:02:23 main.go:109: Starting job ccd50887-4a19-440d-abcc-3520cb89144b for tenant: Manpower Resources India Pvt Ltd, company: Viraj Steels with 2 candidates
+2025/06/20 14:02:23 main.go:138: Processing candidate: Priya Sharma (priya.sharma@example.com)
+2025/06/20 14:02:23 main.go:138: Processing candidate: Aarav Mehta (aarav.mehta@example.com)
+2025/06/20 14:02:23 main.go:356: Downloading file from URL: https://msnlabs.com/img/resume-sample.pdf
+2025/06/20 14:02:23 main.go:356: Downloading file from URL: https://calibre-ebook.com/downloads/demos/demo.docx
+2025/06/20 14:02:25 main.go:375: File downloaded successfully: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/priya.sharma_example.com/resume
+2025/06/20 14:02:25 main.go:397: Merging PDFs: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/factsheets/priya.sharma_example.com_factsheet.pdf + /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/priya.sharma_example.com/resume.pdf -> /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/priya.sharma_example.com/merged.pdf
+2025/06/20 14:02:25 main.go:406: PDFs merged successfully: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/priya.sharma_example.com/merged.pdf
+2025/06/20 14:02:25 main.go:149: Successfully processed candidate: priya.sharma@example.com
+2025/06/20 14:02:27 main.go:375: File downloaded successfully: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/resume
+2025/06/20 14:02:27 main.go:380: Converting file to PDF: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/resume
+2025/06/20 14:02:27 main.go:392: File converted to PDF: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/resume.pdf
+2025/06/20 14:02:27 main.go:397: Merging PDFs: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/factsheets/aarav.mehta_example.com_factsheet.pdf + /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/resume.pdf -> /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/merged.pdf
+2025/06/20 14:02:27 main.go:406: PDFs merged successfully: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/temp/aarav.mehta_example.com/merged.pdf
+2025/06/20 14:02:27 main.go:149: Successfully processed candidate: aarav.mehta@example.com
+2025/06/20 14:02:27 main.go:156: Processing completed. Success: 2, Errors: 0
+2025/06/20 14:02:27 main.go:411: Creating zip file from directory: /tmp/candidate-processor/ccd50887-4a19-440d-abcc-3520cb89144b/factsheets -> /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_ccd50887-4a19-440d-abcc-3520cb89144b.zip
+2025/06/20 14:02:28 main.go:449: Zip file created with 2 files: /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_ccd50887-4a19-440d-abcc-3520cb89144b.zip
+2025/06/20 14:02:28 main.go:171: Created zip file: /tmp/Manpower_Resources_India_Pvt_Ltd_Viraj_Steels_factsheets_ccd50887-4a19-440d-abcc-3520cb89144b.zip
+2025/06/20 14:02:28 main.go:190: Job ccd50887-4a19-440d-abcc-3520cb89144b completed successfully for Manpower Resources India Pvt Ltd - Viraj Steels
+2025/06/20 14:02:28 main.go:121: Cleaning up temporary files for job ccd50887-4a19-440d-abcc-3520cb89144b
+2025/06/20 14:02:28 main.go:125: Successfully cleaned up temporary files for job ccd50887-4a19-440d-abcc-3520cb89144b
